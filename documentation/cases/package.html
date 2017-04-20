@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>cases - edgaras_juocepis_final_project_cs441 documentation - cases</title>
+          <meta name="description" content="cases - edgaras juocepis final project cs441 documentation - cases" />
+          <meta name="keywords" content="cases edgaras juocepis final project cs441 documentation cases" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'cases.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../lib/package_big.png" />
+        
+        <h1>cases</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cases</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="cases.Book" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BookextendsProductwithSerializable"></a>
+      <a id="Book:Book"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Book.html"><span class="name">Book</span></a><span class="params">(<span name="isbn">isbn: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="title">title: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="author">author: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="year">year: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="publisher">publisher: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Case class that holds book data
+</p>
+    </li><li name="cases.BuildArffFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuildArffFileextendsProductwithSerializable"></a>
+      <a id="BuildArffFile:BuildArffFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BuildArffFile.html"><span class="name">BuildArffFile</span></a><span class="params">(<span name="books">books: <span class="extype" name="scala.Seq">Seq</span>[<a href="Book.html" class="extype" name="cases.Book">Book</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Actor message to tell to build and .</p>
+    </li><li name="cases.CreateCustomRecommendation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CreateCustomRecommendationextendsProductwithSerializable"></a>
+      <a id="CreateCustomRecommendation:CreateCustomRecommendation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CreateCustomRecommendation.html"><span class="name">CreateCustomRecommendation</span></a><span class="params">(<span name="ratings">ratings: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="nRecommendations">nRecommendations: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Actor message to start calculating recommendations for the client
+</p>
+    </li><li name="cases.CreateRecommendations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CreateRecommendationsextendsProductwithSerializable"></a>
+      <a id="CreateRecommendations:CreateRecommendations"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CreateRecommendations.html"><span class="name">CreateRecommendations</span></a><span class="params">(<span name="source">source: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Actor message to start calculating recommendations for a pre defined user (Only when Main is run and not Client)</p>
+    </li><li name="cases.SendRecommendations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SendRecommendationsextendsProductwithSerializable"></a>
+      <a id="SendRecommendations:SendRecommendations"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SendRecommendations.html"><span class="name">SendRecommendations</span></a><span class="params">(<span name="recs">recs: <span class="extype" name="scala.Seq">Seq</span>[<a href="../weka/RecModel.html" class="extype" name="weka.RecModel">RecModel</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Actor message for RecommendationsActor to start querying MySQL and print recommendations to the console
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="cases.BookDataContainer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BookDataContainer"></a>
+      <a id="BookDataContainer:BookDataContainer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BookDataContainer$.html"><span class="name">BookDataContainer</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Created by titusjuocepis on 12/11/16.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../lib/template.js"></script>
+    </body>
+      </html>
