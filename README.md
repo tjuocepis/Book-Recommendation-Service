@@ -1,11 +1,11 @@
-** Book Recommendation System **
+**Book Recommendation System**
 
-*** What is the project about? ***
+***What is the project about?***
 
 The project is a book recommendation system that asks the user to rate books and based on that it calculates
 recommendations and displays them to the user.
 
-*** Design Rationale ***
+***Design Rationale***
 
 The project includes a local client that the user can use to interact with the system.  The client program will ask
 the user to input some book recommendations and then will generate the recommendations and display them to output.
@@ -21,20 +21,10 @@ to store book meta data as well the book's image url.  When generating the recom
 based on book ISBN numbers so to make a full recommendations response it queries MySQL based on book ISBN numbers to
 grab the meta data such as the title, author and etc.
 
-*** MySQL Table Schema ***
+***Experiences***
 
-+----------------------------------------------------+
-| isbn | title | author | year | publisher | image_l |
-+----------------------------------------------------+
-| ...  | ..... | ...... | .... | ......... | ....... |
-+----------------------------------------------------+
+I ran into a nasty issue with a duplicate Guava dependency that took forever to resolve.  I solved the issue by removing one of the guava dependencies.
 
-*** Experiences ***
-
-I ran into a nasty issue with a duplicate Guava dependency that took forever to resolve.  Because of that I was not
-able to deploy my system to a VM because it would not compile. Once I fixed the issue I did not have enough time
-to do so
-
-*** Documentation ***
+***Documentation***
 
 For documentation go to documentation folder and open index.html
